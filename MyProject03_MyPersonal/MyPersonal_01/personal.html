@@ -26,11 +26,39 @@
 			<!--});-->
     <!--</script>-->
 </head>
-<body>
+<body onload="startTime()">
 <!--start-home-->
 
 		<div class="banner" id="home">
+			<div id="setDateTime"></div>
+			<script>
+				function startTime(){
+					var today=new Date();
+					var y=today.getFullYear();
+					var mon=today.getMonth();
+					var d=today.getDay();
+					var h=today.getHours();
+					var m=today.getMinutes();
+
+					var s=today.getSeconds();
+					m=checkTime(m);
+					s=checkTime(s);
+
+					document.getElementById("setDateTime").innerHTML="NOW ： "+h+" : "+m+" : "+s;
+
+					t=setTimeout(function(){startTime();},1000);
+					//document.write(today);
+				};
+
+				function checkTime(i){
+					if(i<10) {
+						i="0"+i;
+					}
+					return i;
+				};
+			</script>
 			<div class="header-top">
+
 				<div class="container">	
 					<!--top-nav-->
 					<span class="menu"> </span>
