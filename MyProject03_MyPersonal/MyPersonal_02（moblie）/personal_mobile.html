@@ -1,0 +1,426 @@
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Personal - SherrySXL</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+    <script type="applijegleryion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <!--webfonts-->
+    <link href='http://fonts.googleapis.com/css?family=Candal|Raleway:500,600,400' rel='stylesheet' type='text/css'>
+    <!--//webfonts-->
+	<style>
+
+		html, body{
+			font-family: 'Raleway', sans-serif;
+			font-size: 100%;
+			background: #FFf;
+		}
+		body a {
+			transition:0.5s all;
+			-webkit-transition:0.5s all;
+			-moz-transition:0.5s all;
+			-o-transition:0.5s all;
+			-ms-transition:0.5s all;
+		}
+		a:hover{
+			text-decoration:none;
+		}
+
+		h1,h2,h3,h4,h5,h6{
+			margin:0;
+			font-family: 'Candal', sans-serif;
+		}
+		p{
+			margin:0;
+		}
+		ul{
+			margin:0;
+			padding:0;
+		}
+		label{
+			margin:0;
+		}
+		/*--start-header--*/
+		.header-top {
+			padding: 2em 0em 0 0;
+		}
+		.logo {
+			text-align: center;
+		}
+		.logo  a h1{
+			font-size:9em;
+			font-weight: 400;
+			color:#34353a;
+			font-family: 'Candal', sans-serif;
+		}
+		.logo  a h1:hover{
+			text-decoration:none;
+		}
+		.logo a h1 span {
+			color:#b42b36;
+		}
+		ul.side_nav{
+			position: fixed;
+			right: 10%;
+			top: 39%;
+			z-index: 1;
+		}
+		ul.side_nav li{
+			display:block;
+		}
+		ul.side_nav li a{
+			width:12px;
+			height:12px;
+			background:#34353a;
+			border:2px solid#34353a;
+			border-radius:50%;
+			-o-border-radius: 50%;
+			-moz-border-radius: 50%;
+			-webkit-border-radius: 50%;
+			display:block;
+			margin-bottom:1em;
+		}
+		ul.side_nav li a:hover{
+			background:#53bed6;
+			border:2px solid#53bed6;
+		}
+		/*--slider--*/
+		.top-menu {
+			/*float: left;*/
+			/*margin: 0 auto ;  */
+			/*width:140%;*/
+			text-align: center;
+		}
+		.top-menu ul{
+			padding:0;
+		}
+		.top-menu ul li{
+			display: inline-block;
+			margin: 0 15px;
+			color: #fff;
+			font-weight: 900;
+			vertical-align: top;
+		}
+		nav a {
+			position: relative;
+			display: inline-block;
+			outline: none;
+			color: #fff;
+			text-decoration: none;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			font-weight: 400;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			font-size: 1em;
+		}
+		nav a:hover,
+		nav a:focus {
+			outline: none;
+		}
+		/* Effect 16: fall down */
+		.cl-effect-16 a {
+			color: #6f8686;
+			text-shadow: 0 0 1px rgba(111,134,134,0.3);
+		}
+		.cl-effect-16 a::before {
+			color: #fff;
+			content: attr(data-hover);
+			position: absolute;
+			opacity: 0;
+			text-shadow: 0 0 1px rgba(255,255,255,0.3);
+			-webkit-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+			-moz-transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+			transform: scale(1.1) translateX(10px) translateY(-10px) rotate(4deg);
+			-webkit-transition: -webkit-transform 0.3s, opacity 0.3s;
+			-moz-transition: -moz-transform 0.3s, opacity 0.3s;
+			transition: transform 0.3s, opacity 0.3s;
+			pointer-events: none;
+		}
+
+		.cl-effect-16 a:hover::before,
+		.cl-effect-16 a:focus::before {
+			-webkit-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+			-moz-transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+			transform: scale(1) translateX(0px) translateY(0px) rotate(0deg);
+			opacity: 1;
+		}
+		.top-menu ul li a{
+			text-decoration: none;
+			color: #34353a;
+			font-size: 1.2em;
+			font-weight: 600;
+			text-transform: uppercase;
+			padding: 0;
+			margin: 0 auto;
+		}
+		.top-menu ul li a:hover,.top-menu ul li a.active{
+			color: #fff;
+		}
+
+		/*--settime--*/
+		#setDateTime{
+			text-decoration: none;
+			color: #34353a;
+			font-size: 1.3em;
+			font-weight: 600;
+			text-transform: uppercase;
+			padding: 0;
+			margin: 0 auto;
+
+		}
+		/*--nav-responsive--*/
+		@media only screen and (max-width :800px) {
+			span.menu {
+				width: 35px;
+				height: 35px;
+				background: url(../images/nav.png)no-repeat 0px 0px;
+				display: inline-block;
+				float: left;
+				cursor: pointer;
+				margin: 0px 0px;
+			}
+			.top-menu {
+				float: none;
+				margin-top: 0em;
+			}
+			.top-menu  ul{
+				display:none;
+			}
+			.top-menu  ul li {
+				display: block;
+				margin-right: 0;
+				margin: 6px 0;
+			}
+			.top-menu  span.menu{
+				display:block;
+			}
+			.top-menu  ul{
+				margin: 53px 0;
+				padding: 2% 0;
+				z-index: 999;
+				position: absolute;
+				width: 93.5%;
+				background:#53bed6;
+				text-align: center;
+				margin-left: -2.3em;
+			}
+			.top-menu li a {
+				padding: 0.5em;
+				font-weight: 400;
+				font-size:0.9em;
+			}
+			.logo {
+				margin-top: 0.7em;
+			}
+			.top-menu ul li a {
+				font-size: 0.9em;
+				padding: 6px 0;
+			}
+		}
+		/*--start-banner--*/
+		.banner {
+			background: #f6608a;
+			min-height: 730px;
+		}
+		.banner-info {
+			margin-top: 10em;
+		}
+		.banner-info p {
+			font-size: 0.9em;
+			font-weight: 400;
+			color: #fff;
+			line-height: 2em;
+			width: 80%;
+			margin: 1% auto 0;
+			text-align: center;
+		}
+		.scroll-down h4{
+			color: #fff;
+			font-weight: 400;
+			font-size: 1em;
+			margin-bottom: 10px;
+		}
+		.scroll-down a span{
+			background:url(../images/down.png) no-repeat 0px 0px;
+			height:32px;
+			width:32px;
+			display:inline-block;
+		}
+		.scroll-down {
+			margin: 12% auto 0;
+			text-align: center;
+		}
+
+		/*--welcome--*/
+		.copy {
+			text-align: center;
+			background:#53bed6;
+			padding: 1em 1em;
+		}
+		.copy p {
+			color: #fff;
+			font-size:0.9em;
+		}
+		.copy p a {
+			color:#fff;
+		}
+		.copy p a:hover{
+			text-decoration: underline;
+		}
+
+
+
+
+
+	</style>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/script-->
+    <!--<script type="text/javascript">-->
+			<!--jQuery(document).ready(function($) {-->
+				<!--$(".scroll").click(function(event){		-->
+					<!--event.preventDefault();-->
+					<!--$('html,body').animate({scrollTop:$(this.hash).offset().top},900);-->
+				<!--});-->
+			<!--});-->
+    <!--</script>-->
+</head>
+<body onload="startTime()">
+<!--start-home-->
+
+		<div class="banner" id="home">
+			<div id="setDateTime"></div>
+			<script>
+				function startTime(){
+					var today=new Date();
+					var y=today.getFullYear();
+					var mon=today.getMonth();
+					var d=today.getDay();
+					var h=today.getHours();
+					var m=today.getMinutes();
+
+					var s=today.getSeconds();
+					m=checkTime(m);
+					s=checkTime(s);
+
+					document.getElementById("setDateTime").innerHTML="NOW ： "+h+" : "+m+" : "+s;
+
+					t=setTimeout(function(){startTime();},1000);
+					//document.write(today);
+				};
+
+				function checkTime(i){
+					if(i<10) {
+						i="0"+i;
+					}
+					return i;
+				};
+			</script>
+			<div class="header-top">
+
+				<div class="container">	
+					<!--top-nav-->
+					<span class="menu"> </span>
+					<div class="link-panel top-menu">
+						<nav>
+							<ul class="cl-effect-16">
+								<!--<li><a class="active scroll" href="#home" onclick="_gaq.push()" data-hover="Home">Home</a></li>-->
+
+								<li><a class="scroll" href="http://weibo.com/sunshinezeroSXL" target="_blank"
+									    data-hover="Weibo">Weibo</a></li>
+
+								<li><a class="scroll" href="http://www.cnblogs.com/shenxiaolin" target="_blank"
+									   data-hover="Cnblogs">Cnblogs</a></li>
+
+								<li><a class="scroll" href="http://blog.sina.com.cn/sunshinezerosxl" target="_blank"
+									   data-hover="SinaBlog">SinaBlog</a></li>
+
+								<li><a class="scroll" href="https://www.douban.com/people/sunshinezero" target="_blank"
+									   data-hover="Douban">Douban</a></li>
+
+								<li><a class="scroll" href="https://github.com/shenxiaolinZERO" target="_blank"
+									   data-hover="Github">Github</a></li>
+
+								<li><a class="scroll" href="https://twitter.com/SherrySXL" target="_blank"
+									   data-hover="Twitter">Twitter</a></li>
+
+								<li><a class="scroll" href="https://www.facebook.com/SherrySXL" target="_blank"
+									   data-hover="Facebook">Facebook</a></li>
+
+								<li><a class="scroll" href="http://stackoverflow.com/users/6057001/sherrysxl" target="_blank"
+									   data-hover="Stackoverflow">Stackoverflow</a></li>
+
+								<li><a class="scroll" href="https://cn.linkedin.com/in/晓麟-沈-198a41115" target="_blank"
+									   data-hover="Linkedin">Linkedin</a></li>
+
+
+								<li><a class="scroll" href="https://dribbble.com/SherrySXL" target="_blank"
+									   data-hover="Dribbble">Dribbble</a></li>
+
+								<li><a class="scroll" href="https://plus.google.com/u/0/115598845866434419664" target="_blank"
+									   data-hover="Googleplus">Googleplus</a></li>
+
+
+								<div class="clearfix"></div>
+							</ul>
+						</nav>		
+					</div>
+					<script src="js/menu_jquery.js"></script>
+
+				<!-- script-for-menu -->
+								<script>
+									$("span.menu").click(function(){
+										$(".top-menu ul").slideToggle("slow" , function(){
+										});
+									});
+								</script>
+								<!-- script-for-menu -->
+
+				 <div class="clearfix"></div>
+			<!-- script-for-menu -->
+		    </div>
+		  </div>
+		<!--banner-->	
+		<div class="container">
+	  	<!-- script-for-menu -->
+		<div class="banner-info">
+			<div class="logo">
+			<a class="active scroll" href="personal.html"><h1>Personal </h1></a>
+			</div>
+		<p> SherrySXL</p>
+			<div class="scroll-down">
+			<h4>SCROLL DOWN</h4>
+			<a class="downarrow scroll" href="#about"><span></span></a>
+			</div>
+		</div>
+	</div>
+</div>
+
+	<!--footer-->
+	<div class="copy">
+		<p>&copy; 2016 Personal. All Rights Reserved | Design by <a href="http://.com/">SXL</a> </p>
+	</div>
+							<!--start-smoth-scrolling-->
+						<script type="text/javascript">
+									$(document).ready(function() {
+										/*
+										var defaults = {
+								  			containerID: 'toTop', // fading element id
+											containerHoverID: 'toTopHover', // fading element hover id
+											scrollSpeed: 1200,
+											easingType: 'linear' 
+								 		};
+										*/
+										
+										$().UItoTop({ easingType: 'easeOutQuart' });
+										
+									});
+								</script>
+</body>
+</html>
